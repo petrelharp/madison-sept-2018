@@ -18,9 +18,9 @@ date: "Madison // Laboratory of Genetics // September 2018"
 *What's it all about?*
 
 
-![Langley et al 2012](figs/langley-2012-pi-and-rho-3L.png)
+![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
 
-![Langley et al 2012](figs/langley-2012-pi-and-rho-3R.png)
+![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
 
 
 
@@ -39,37 +39,37 @@ linked selection
 Hitchhiking
 -----------
 
-![Maynard Smith & Haigh](figs/from-the-literature/maynard-smith-haigh-hitchhiking-dip.png)
+![Maynard Smith & Haigh](figs/from_the_literature/maynard-smith-haigh-hitchhiking-dip.png)
 
 
 Background selection
 --------------------
 
-![Hudson 1994](hudson-1994-background-dip-in-diversity.png)
+![Hudson 1994](figs/from_the_literature/hudson-1994-background-dip-in-diversity.png)
 
 
 Balanced polymorphism
 ---------------------
 
-![Kreitman & Hudson 1991](figs/from-the-literature/kreitman-hudson-fig-5.png)
+![Kreitman & Hudson 1991](figs/from_the_literature/kreitman-hudson-fig-5.png)
 
 
 ## *Drosophila melanogaster*
 
-![McGaugh et al 2012](figs/from-the-literature/mcgaugh-2012-drosophila-dip.png)
+![McGaugh et al 2012](figs/from_the_literature/mcgaugh-2012-drosophila-dip.png)
 
 
 ## *Homo sapiens*
 
-![Hernandez et al 2011](hernandez-2011-dip-in-diversity.png)
+![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
 
 ## Diversity correlates with recombination rate
 
-![Corbett-Detig et al](corbett-detig-divergence-recomb-drosophila.png)
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png)
 
 --------------------
 
-![Corbett-Detig et al](corbett-detig-divergence-recomb-all-species.png)
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png)
 
 
 --------------------
@@ -146,28 +146,101 @@ Balanced polymorphism
 
 -------------------
 
-![Langley et al 2012](figs/from-the-literature/langley-2012-pi-and-rho-3L.png)
+![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
 
 -------------------
 
-![Langley et al 2012](figs/from-the-literature/langley-2012-pi-and-rho-3R.png)
+![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
 
 -------------------
 
-![McVicker et al 2009](figs/from-the-literature/mcvicker-2009-hu_chr1-landscape.png)
-![](figs/from-the-literature/mcvicker-2009-hu_chr1-landscape-caption.png)
+![McVicker et al 2009](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape.png)
+![](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape-caption.png)
+
+
+<!-- AURENTIACUS -->
+
+----------------------------------
+
+![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint.png)
+
+----------------------------------
+
+![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint_peeps.png)
 
 
 The *Mimulus aurentiacus* species complex
 -----------------------------------------
 
+![](figs/aurentiacus/system.png)
 
-Tree *shape*: with local PCA
-----------------------------
 
-## Principal Components Analysis (PCA)
+-------------------------
 
-![Novembre et al 2008](figs/novembre-map-genes-mirror-geography-crop.jpg)
+Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
+
+- chromosome-level genome assembly
+- $20\times$ coverage of 8 taxa and outgroup (*M.cleavlandii*)
+- diversity ($\pi$), divergence ($d_{xy}$),
+    and differentiation ($F_{ST}$) in windows
+- 36 pairwise comparisons among 9 taxa
+- estimates of recombination rate and gene density
+    form map and annotation
+
+## A spectrum of differentiation
+
+![](figs/aurentiacus/distributions.png)
+
+-------------------
+
+
+![](figs/aurentiacus/correlations.png){width=70%}
+
+
+-------------------
+
+![](figs/aurentiacus/lg1.png)
+
+
+---------------------
+
+![](figs/aurentiacus/diversity-recomb.png)
+
+
+---------------------
+
+![](figs/aurentiacus/building_cor_1.png)
+
+---------------------
+
+![](figs/aurentiacus/building_cor_2.png)
+
+---------------------
+
+![](figs/aurentiacus/building_cor_3.png)
+
+---------------------
+
+![](figs/aurentiacus/building_cor_4.png)
+
+---------------------
+
+![](figs/aurentiacus/cor-across-time.png)
+
+
+## Conclusions
+
+- shared targets of linked selection across taxa
+
+. . .
+
+- but, what *kind* of linked selection?
+
+
+<!--  LOCAL PCA -->
+
+# Tree *shape*: with local PCA
+
 
 ## Principal Components Analysis (PCA)
 
@@ -175,8 +248,12 @@ Tree *shape*: with local PCA
 
 <!-- http://www.pnas.org/content/108/3/1088.full -->
 
+----------------
 
-## ... describes the covariance matix
+![Novembre et al 2008](figs/novembre-map-genes-mirror-geography-crop.jpg)
+
+
+## PCA describes the covariance matix
 
 Genetic covariance between samples $i$ and $j$ is
 the average over loci
@@ -198,7 +275,7 @@ caused by *population structure*.
 
 . . .
 
-but: {\Large linked selection}
+but: linked selection
 
 **locally distorts** genealogical patterns.
 
@@ -206,9 +283,9 @@ but: {\Large linked selection}
 in patterns of relatedness?
 
 
-## Our method
+---------------
 
-![](figs/the-method-diagram-modified.png)
+![Our method](figs/the-method-diagram-modified.png)
 
 
 
@@ -234,23 +311,41 @@ in patterns of relatedness?
 
 ## Data: African *D. melanogaster*
 
-* DPGP {\aside (Langley et al 2012; Pool et al 2012; Lack et al 2015)} \\
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+
+![](figs/drosophila_2R_inversion_pcs_0.png)
+
+:::
+::: {.column width="50%"}
+
+* DPGP *(Langley et al 2012; Pool et al 2012; Lack et al 2015)*
 * 380 mostly African samples -- WGS -- 9 Kb windows
-* large, segregating inversions {\aside (Corbett-Detig \& Hartl 2012; Langley et al 2012)}
-* without less common inversion haplotypes: {\newthing linked selection?}
+
+:::
+::::::::::::::
 
 
+------------
 
-* ![](figs/drosophila_2R_inversion_pcs_0.png)
-* ![](figs/drosophila_2R_inversion_pcs_1.png)
-* ![](figs/drosophila_recomb_mds_for_talk.png)
+![](figs/drosophila_2R_inversion_pcs_1.png)
+
+* large, segregating inversions *(Corbett-Detig & Hartl 2012; Langley et al 2012)*
+
+------------
+
+![](figs/drosophila_recomb_mds_for_talk.png)
+
+* without less common inversion haplotypes: *linked selection?*
 
 
 ## Data: *Medicago truncatula* Hapmap (Tang et al 2014)
 
 * 263 pan-Mediterranean samples -- WGS -- 100 Kb windows
 
-[](figs/medicago_for_talk)
+##
+
+![](figs/medicago_for_talk.png)
 
 
 
@@ -264,7 +359,7 @@ in patterns of relatedness?
 * missingness
 
 
-## {class: "center";}
+## {.center}
 
 So, which is it?
 
