@@ -25,10 +25,9 @@ date: "Madison // Laboratory of Genetics // September 2018"
 
 What causes variation in genetic diversity?
 
-How much does the answer differ between species?
 
 
-## {.centered}
+##
 
 $$
 \begin{aligned}
@@ -52,13 +51,13 @@ $$
 
 linked selection
 
-: The indirect effects of selection on nearby genomic locations,
+: The indirect effects of selection on genomic locations
   that are *linked* to the sites under selection by a lack of recombination.
 
 ::: {.centered}
 
-![](figs/background_haps.png){.fragment width="40%"}
 ![](figs/sweep_haps.png){.fragment width="40%"}
+![](figs/background_haps.png){.fragment width="40%"}
 
 :::
 
@@ -145,11 +144,13 @@ linked selection
 # Linked selection, in practice
 
 
+<!--
 ## *Homo sapiens*
 
 ![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
 
 *Hernandez et al 2011*
+-->
 
 ## Diversity correlates with recombination rate
 
@@ -167,13 +168,14 @@ Corbett-Detig et al 2015
 
 ![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
 
-
+<!--
 -------------------
 
 ![McVicker et al 2009](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape.png)
 ![](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape-caption.png)
 
 McVicker et al 2009
+-->
 
 <!-- AURENTIACUS -->
 
@@ -183,12 +185,16 @@ McVicker et al 2009
 The *Mimulus aurantiacus* species complex
 -----------------------------------------
 
+::: {.centered}
 ![](figs/aurantiacus/system.png)
+:::
 
 
 ------------------
 
+::: {.centered}
 ![](figs/aurantiacus/stankowski-color-cline.png){width=70%}
+:::
 
 ----------------------------------
 
@@ -202,7 +208,7 @@ The *Mimulus aurantiacus* species complex
 
 -------------------------
 
-Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
+The data:
 
 - chromosome-level genome assembly
 - $20\times$ coverage of 8 taxa and outgroup (*M.clevelandii*)
@@ -212,9 +218,11 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 - estimates of recombination rate and gene density
     from map and annotation
 
+<!--
 ## A spectrum of differentiation
 
 ![](figs/aurantiacus/distributions.png)
+-->
 
 -------------------
 
@@ -286,13 +294,13 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 
 ## Conclusions
 
-- shared targets of linked selection across taxa
+- Emergence of landscape of diversity across $\approx$ 1.5 million years!
 
-- and across $\approx$ 1.5 million years
+- Shared targets of linked selection across taxa?
 
 . . .
 
-- but, what *kind* of linked selection?
+- But, what *kind* of linked selection?
 
 
 <!-- section SIMULATION -->
@@ -325,6 +333,10 @@ nonneutral mutations possible at $10^5$ loci.
 
 
 ##
+
+*First:*
+
+- **large populations with long genomes**
 
 a big step in the right direction
 
@@ -363,7 +375,9 @@ A **tree sequence** describes this, er, sequence of trees.
 
 2. Much less can fully describe the history relevant to a *sample* of genomes.
 
+<!--
 3. This information is equivalent to the Ancestral Recombination Graph (ARG).
+-->
 
 
 -------------
@@ -589,8 +603,11 @@ of a subset?
 
 Concretely, given an input tree sequence
 and a subset of its nodes we call the *samples*,
-we want a new tree sequence for which:
 
+we want a new *minimal* tree sequence
+that contains the history of those samples.
+
+<!--
 1. All marginal trees match the corresponding subtree 
     in the input tree sequence.
 
@@ -600,24 +617,25 @@ we want a new tree sequence for which:
 
 4. No adjacent redundant edges 
     (e.g., $(\ell, x, p, c) + (x, r, p, c) \rightarrow (\ell, r, p, c)$).
+-->
 
 -----------
 
-*Answer:* to simplify a tree sequence
+To simplify a tree sequence
 to the history of the *samples*:
 
-1. Paint each *sampled* chromosome a distinct color.
-
-2. Moving back up the tree sequence,
-    copy colors of each chromosome to the parental chromosomes
-    they inherited from.
-
-3. If two colors go in the same spot (*coalescence*),
-    replace with a new color (unique to that ancestor).
-    Output a node for the ancestor and an edge for the coalescence.
-
-4. Once all colors have coalesced in a given segment,
-    stop propagating it.
+> 1. Paint each *sampled* chromosome a distinct color.
+> 
+> 2. Moving back up the tree sequence,
+>     copy colors of each chromosome to the parental chromosomes
+>     they inherited from.
+> 
+> 3. If two colors go in the same spot (*coalescence*),
+>     replace with a new color (unique to that ancestor).
+>     Output a node for the ancestor and an edge for the coalescence.
+> 
+> 4. Once all colors have coalesced in a given segment,
+>     stop propagating it.
 
 ## An example: simplify these to J and K
 
@@ -733,19 +751,17 @@ Every time an individual is born, we must:
 
 - Machine: Ubuntu / 2x 2.6 GHz Intel E5-2650 CPU
 
-. . .
-
-*Other implementations:* 
-
-- [pure `python`](https://github.com/ashander/ftprime), interfacing with [`simuPOP`](https://github.com/BoPeng/simuPOP)
-- [cython](https://github.com/molpopgen/tutorials/blob/cython_cpp_tutorial/notebooks/wfcython.ipynb)
 
 ## Simulation parameters
 
-1. Wright-Fisher population of size $N$
-2. simulated for $10N$ generations
-3. neutral mutation rate $\mu$ equal to recombination rate $r$ per gamete
-4. many, weakly deleterious mutations: rate $\mu/100$ with
+
+- Wright-Fisher population of size $N$
+
+- simulated for $10N$ generations
+
+- neutral mutation rate $\mu$ equal to recombination rate $r$ per gamete
+
+- many, weakly deleterious mutations: rate $\mu/100$ with
     $s$ exponentially distributed with mean $2.5/N$.
 
 . . .
@@ -757,6 +773,31 @@ but neutral mutations were added *afterwards*.
 
 
 --------------------------
+
+<!--
+Translation:
+$$
+\begin{aligned}
+N=10^3 \text{ and } \rho=10^4 \\
+\Rightarrow L \approx 2.5 \times 10^8 \text{bp}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+N=10^4 \text{ and } \rho=10^4 \\
+\Rightarrow L \approx 2.5 \times 10^7 \text{bp}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+N=5 \times 10^4 \text{ and } \\
+\qquad \rho=10^5 \\
+\Rightarrow L \approx 5 \times 10^7 \text{bp}
+\end{aligned}
+$$
+-->
 
 ![Total run time per single simulation as a function of region length.](figs/rawspeed.png){ width=80% }
 
@@ -771,7 +812,7 @@ but neutral mutations were added *afterwards*.
 
 To check predictions, we **still** need simulations with:
 
-- **many loci under selection**
+- many loci under selection
 - **geographic population structure**
 - large populations with long genomes
 
@@ -832,6 +873,9 @@ now with:
 - geographic maps
 - locally, density-dependent demography (*non-Wright-Fisher*)
 
+
+**And a GUI!!!**
+
 :::
 ::::::: {.column width="50%"}
 
@@ -855,7 +899,7 @@ now with:
 ![](figs/slim_timing.png){width=60%}
 :::
 
-## What else can you do with the trees?
+## What else can you do with the tree sequence?
 
 > - recording ancient samples 
 > - true ancestry reconstruction 
@@ -918,7 +962,15 @@ $s$ as above but beneficial on one side, deleterious on the other
 
 -------
 
-open questions
+> - Landscapes of genetic diversity emerge, and change with time.
+
+> - What makes these landscapes? Still unknown.
+
+> - But, we can finally simulate the process!
+
+> - Tree sequences are awesome.
+
+
 
 Thanks!
 -------
@@ -967,4 +1019,20 @@ Balanced polymorphism
 ------------------
 
 ![](figs/aurantiacus/correlations.png){width=70%}
+
+------------------
+
+Simplification finds the minimal tree sequence,
+for a subset of its samples, such that:
+
+1. All marginal trees match the corresponding subtree 
+    in the input tree sequence.
+
+2. Every non-sample node in marginal trees has at least two children.
+
+3. All nodes and edges are ancestral to at least one sample.
+
+4. No adjacent redundant edges 
+    (e.g., $(\ell, x, p, c) + (x, r, p, c) \rightarrow (\ell, r, p, c)$).
+-->
 
