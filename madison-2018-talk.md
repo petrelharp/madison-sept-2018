@@ -1,5 +1,6 @@
 ---
-title: "Landscapes of linked selection (and how to simulate them"
+title: "Landscapes of linked selection" 
+subtitle: "(and how to simulate them)"
 author: "Peter Ralph"
 date: "Madison // Laboratory of Genetics // September 2018"
 ---
@@ -16,9 +17,7 @@ date: "Madison // Laboratory of Genetics // September 2018"
 ## Genomic landscapes
 
 
-![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
-
-![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
+![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
 
 
 ##
@@ -39,7 +38,7 @@ F_{ST} &= \text{ (relative differentiation) }
 \end{aligned}
 $$
 
-::: {.center}
+::: {.centered}
 
 ![](figs/fst_tree.png){width=60%}
 
@@ -56,16 +55,22 @@ linked selection
 : The indirect effects of selection on nearby genomic locations,
   that are *linked* to the sites under selection by a lack of recombination.
 
+::: {.centered}
 
 ![](figs/background_haps.png){.fragment width="40%"}
 ![](figs/sweep_haps.png){.fragment width="40%"}
 
+:::
 
 --------------------
 
 **Linked Selection: a field guide**
 
 *composed of rough sketches*
+
+. . .
+
+*citations: numerous*
 
 0. Neutrality
 -------------
@@ -109,7 +114,7 @@ linked selection
 
 ![](figs/linked-selection-guide/linked-selection-site-local_adaptation.png)
 
-[Bierne 2010](https://doi.org/10.1111%2fj.1558-5646.2010.01050.x)
+<!-- [Bierne 2010](https://doi.org/10.1111%2fj.1558-5646.2010.01050.x) -->
 
 7. Background selection
 -----------------------
@@ -156,42 +161,42 @@ Corbett-Detig et al 2015; Cutter & Payseur 2013
 
 ![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=70%}
 
+Corbett-Detig et al 2015
 
 -------------------
 
-![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
+![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
 
-
-![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
 
 -------------------
 
 ![McVicker et al 2009](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape.png)
 ![](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape-caption.png)
 
+McVicker et al 2009
 
 <!-- AURENTIACUS -->
 
 # Landscapes, changing over time
 
 
-The *Mimulus aurentiacus* species complex
+The *Mimulus aurantiacus* species complex
 -----------------------------------------
 
-![](figs/aurentiacus/system.png)
+![](figs/aurantiacus/system.png)
 
 
 ------------------
 
-![](figs/aurentiacus/stankowski-color-cline.png){width=70%}
+![](figs/aurantiacus/stankowski-color-cline.png){width=70%}
 
 ----------------------------------
 
-![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint.png)
+![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurantiacus/preprint.png)
 
 ----------------------------------
 
-![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint_peeps.png)
+![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurantiacus/preprint_peeps.png)
 
 
 
@@ -200,7 +205,7 @@ The *Mimulus aurentiacus* species complex
 Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 
 - chromosome-level genome assembly
-- $20\times$ coverage of 8 taxa and outgroup (*M.cleavlandii*)
+- $20\times$ coverage of 8 taxa and outgroup (*M.clevelandii*)
 - diversity ($\pi$), divergence ($d_{xy}$),
     and differentiation ($F_{ST}$) in windows
 - 36 pairwise comparisons among 9 taxa
@@ -209,74 +214,74 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 
 ## A spectrum of differentiation
 
-![](figs/aurentiacus/distributions.png)
+![](figs/aurantiacus/distributions.png)
 
 -------------------
 
-![](figs/aurentiacus/lg1.png)
+![](figs/aurantiacus/lg1.png)
 
 
 ---------------------
 
-![](figs/aurentiacus/diversity-recomb.png)
+![](figs/aurantiacus/diversity-recomb.png)
 
 ---------------------
 
-![](figs/aurentiacus/emergence_of_fst_0.png)
+![](figs/aurantiacus/emergence_of_fst_0.png)
 
 ---------------------
 
-![](figs/aurentiacus/emergence_of_fst_1.png)
+![](figs/aurantiacus/emergence_of_fst_1.png)
 
 ---------------------
 
-![](figs/aurentiacus/emergence_of_fst_2.png)
-
-
----------------------
-
-![](figs/aurentiacus/PUN_AUS_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_CAL_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_LON_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_AUR_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_FLE_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_ARI_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_BIF_fst.png)
-
----------------------
-
-![](figs/aurentiacus/PUN_CLV_fst.png)
+![](figs/aurantiacus/emergence_of_fst_2.png)
 
 
 ---------------------
 
-![](figs/aurentiacus/cor-across-time-0.png)
+![](figs/aurantiacus/PUN_AUS_fst.png)
 
 ---------------------
 
-![](figs/aurentiacus/cor-across-time-1.png)
+![](figs/aurantiacus/PUN_CAL_fst.png)
 
 ---------------------
 
-![](figs/aurentiacus/cor-across-time-2.png)
+![](figs/aurantiacus/PUN_LON_fst.png)
+
+---------------------
+
+![](figs/aurantiacus/PUN_AUR_fst.png)
+
+---------------------
+
+![](figs/aurantiacus/PUN_FLE_fst.png)
+
+---------------------
+
+![](figs/aurantiacus/PUN_ARI_fst.png)
+
+---------------------
+
+![](figs/aurantiacus/PUN_BIF_fst.png)
+
+---------------------
+
+![](figs/aurantiacus/PUN_CLV_fst.png)
+
+
+---------------------
+
+![](figs/aurantiacus/cor-across-time-0.png)
+
+---------------------
+
+![](figs/aurantiacus/cor-across-time-1.png)
+
+---------------------
+
+![](figs/aurantiacus/cor-across-time-2.png)
 
 
 ## Conclusions
@@ -293,6 +298,15 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 <!-- section SIMULATION -->
 
 # Simulation: not as easy as you might think
+
+-----------------------------------------
+
+![](figs/aurantiacus/system.png)
+
+------------------
+
+![](figs/aurantiacus/stankowski-color-cline.png){width=70%}
+
 
 -----------------------------
 
@@ -729,7 +743,7 @@ Every time an individual is born, we must:
 ## Simulation parameters
 
 1. Wright-Fisher population of size $N$
-2. simulated for $10N$ genreations
+2. simulated for $10N$ generations
 3. neutral mutation rate $\mu$ equal to recombination rate $r$ per gamete
 4. many, weakly deleterious mutations: rate $\mu/100$ with
     $s$ exponentially distributed with mean $2.5/N$.
@@ -781,9 +795,13 @@ SLiM v3.1 *(Haller and Messer)*
 :::
 ::::::
 
-## SLiM v3.1
+## 
 
-**S**election on **Li**nked **M**utations:
+::: {.columns}
+::::::: {.column width="50%"}
+
+
+**S**election on **Li**nked **M**utations, v3.1:
 a forwards-time, individual-based, explicitly genomic simulator,
 now with:
 
@@ -791,39 +809,72 @@ now with:
 - geographic maps
 - locally, density-dependent demography (*non-Wright-Fisher*)
 
-## ... and now with tree sequence recording
+:::
+::::::: {.column width="50%"}
 
+![](figs/slim_logo.png)
+<!-- ![](figs/slim_space.png) -->
 
-SLiM preprint
+:::
+:::::::
 
-## {.centered}
+## 
 
 ::: {.columns}
-:::::: {.column width=40%}
+::::::: {.column width="50%"}
 
-A 100x speedup:
+
+**S**election on **Li**nked **M**utations, v3.1:
+a forwards-time, individual-based, explicitly genomic simulator,
+now with:
+
+- continuous space
+- geographic maps
+- locally, density-dependent demography (*non-Wright-Fisher*)
 
 :::
-:::::: {.column width=60%}
+::::::: {.column width="50%"}
 
-![](figs/slim_timing.png){width=100%}
+<!-- ![](figs/slim_logo.png) -->
+![](figs/slim_space.png){width=80%}
 
 :::
-::::::
+:::::::
+
+
+
+## ... now with tree sequence recording!
+
+
+![](figs/slim_preprint.png)
+
+
+## A 100x speedup:
+
+::: {.centered}
+![](figs/slim_timing.png){width=60%}
+:::
+
+## What else can you do with the trees?
+
+> - recording ancient samples 
+> - true ancestry reconstruction 
+> - *recapitation*: fast, post-hoc initialization with coalescent simulation 
+
 
 ---------------------
 
-Model:
-
-
-
+**For example:**
 
 
 - genome as human chr7 ($1.54 \times 10^8$bp)
 - $\approx$ 10,000 diploids
+- 500,000 overlapping generations
 - continuous, square habitat
 - selected mutations at rate $10^{-10}$
+- neutral mutations added afterwards
 
+*Runtime:* 8 hours
 
 ---------------------
 
@@ -834,13 +885,33 @@ $$
 
 ![](figs/slim_divergences_run_031486.png)
 
+
+---------------------
+
+**Sweeps and background selection**:
+$$
+    \pm s \sim \text{Gamma}(2, \text{mean}=0.005)
+$$
+
+![](figs/slim_divergences_run_031486_shaded.png)
+
 ---------------------
 
 **Local adaptation**:
 
-$s$ as above but benefical on one side, deleterious on the other
+$s$ as above but beneficial on one side, deleterious on the other
 
 ![](figs/slim_divergences_run_016913.png)
+
+
+---------------------
+
+**Local adaptation**:
+
+$s$ as above but beneficial on one side, deleterious on the other
+
+![](figs/slim_divergences_run_016913_shaded.png)
+
 
 
 # Overview
@@ -852,17 +923,11 @@ open questions
 Thanks!
 -------
 
-- Madeline Chase
-- Sean Stankowski
-- Matt Streisfeld 
-- Andy Kern (UO)
+Mimulus: Madeline Chase, Sean Stankowski, Matt Streisfeld
 
-Ben Haller, Jared Galloway
+Tree sequences: Jerome Kelleher, Ben Haller, Jaime Ashander, Kevin Thornton, Jared Galloway
 
-Jerome Kelleher, Jaime Ashander, and Kevin Thornton: 
-
-
-Funding: NSF ABI, Sloan
+Funding: NSF ABI, Sloan, UO
 
 Slides with [reveal.js](http://hakim.se) and [pandoc](https://pandoc.org/).
 
@@ -901,5 +966,5 @@ Balanced polymorphism
 
 ------------------
 
-![](figs/aurentiacus/correlations.png){width=70%}
+![](figs/aurantiacus/correlations.png){width=70%}
 
