@@ -13,9 +13,7 @@ date: "Madison // Laboratory of Genetics // September 2018"
 2. *Practice:* some landscapes from the wild
 3. *Simulation:* recent progress on a hard problem
 
---------------
-
-*What's it all about?*
+## Genomic landscapes
 
 
 ![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
@@ -23,6 +21,29 @@ date: "Madison // Laboratory of Genetics // September 2018"
 ![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
 
 
+##
+
+
+What causes variation in genetic diversity?
+
+How much does the answer differ between species?
+
+
+## {.centered}
+
+$$
+\begin{aligned}
+\pi &= \text{ (within-pop diversity) } \\
+d_{xy} &= \text{ (between-pop divergence) } \\
+F_{ST} &= \text{ (relative differentiation) }
+\end{aligned}
+$$
+
+::: {.center}
+
+![](figs/fst_tree.png){width=60%}
+
+:::
 
 <!-- section THEORY -->
 
@@ -36,47 +57,20 @@ linked selection
   that are *linked* to the sites under selection by a lack of recombination.
 
 
-Hitchhiking
------------
-
-![Maynard Smith & Haigh](figs/from_the_literature/maynard-smith-haigh-hitchhiking-dip.png)
-
-
-Background selection
---------------------
-
-![Hudson 1994](figs/from_the_literature/hudson-1994-background-dip-in-diversity.png)
-
-
-Balanced polymorphism
----------------------
-
-![Kreitman & Hudson 1991](figs/from_the_literature/kreitman-hudson-fig-5.png)
-
-
-## *Drosophila melanogaster*
-
-![McGaugh et al 2012](figs/from_the_literature/mcgaugh-2012-drosophila-dip.png)
-
-
-## *Homo sapiens*
-
-![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
-
-## Diversity correlates with recombination rate
-
-![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png)
-
---------------------
-
-![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png)
+![](figs/background_haps.png){.fragment width="40%"}
+![](figs/sweep_haps.png){.fragment width="40%"}
 
 
 --------------------
 
-**A field guide**
+**Linked Selection: a field guide**
 
-*based on rough sketches*
+*composed of rough sketches*
+
+0. Neutrality
+-------------
+
+![](figs/linked-selection-guide/linked-selection-site-neutral_early.png)
 
 0. Neutrality
 -------------
@@ -110,7 +104,7 @@ Balanced polymorphism
 
 ![](figs/linked-selection-guide/linked-selection-site-introgression.png)
 
-6. Local adaptation
+6. Local adaptation with gene flow
 -------------------
 
 ![](figs/linked-selection-guide/linked-selection-site-local_adaptation.png)
@@ -132,23 +126,41 @@ Balanced polymorphism
 
 ![](figs/linked-selection-guide/linked-selection-region-recurrent_introgression.png)
 
+## Etcetera
+
 10. Recurrent local adaptation after a split
--------------------------------------------
 
 11. Recurrent, transient balancing selection
---------------------------------------------
+
+12. All of the above?
 
 
 <!-- section PRACTICE -->
 
-# Genomic landscapes
+# Linked selection, in practice
+
+
+## *Homo sapiens*
+
+![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
+
+*Hernandez et al 2011*
+
+## Diversity correlates with recombination rate
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png)
+
+Corbett-Detig et al 2015; Cutter & Payseur 2013 
+
+--------------------
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=70%}
 
 
 -------------------
 
 ![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3L.png)
 
--------------------
 
 ![Langley et al 2012](figs/from_the_literature/langley-2012-pi-and-rho-3R.png)
 
@@ -160,6 +172,19 @@ Balanced polymorphism
 
 <!-- AURENTIACUS -->
 
+# Landscapes, changing over time
+
+
+The *Mimulus aurentiacus* species complex
+-----------------------------------------
+
+![](figs/aurentiacus/system.png)
+
+
+------------------
+
+![](figs/aurentiacus/stankowski-color-cline.png){width=70%}
+
 ----------------------------------
 
 ![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint.png)
@@ -168,11 +193,6 @@ Balanced polymorphism
 
 ![https://www.biorxiv.org/content/early/2018/06/21/342352](figs/aurentiacus/preprint_peeps.png)
 
-
-The *Mimulus aurentiacus* species complex
------------------------------------------
-
-![](figs/aurentiacus/system.png)
 
 
 -------------------------
@@ -185,17 +205,11 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
     and differentiation ($F_{ST}$) in windows
 - 36 pairwise comparisons among 9 taxa
 - estimates of recombination rate and gene density
-    form map and annotation
+    from map and annotation
 
 ## A spectrum of differentiation
 
 ![](figs/aurentiacus/distributions.png)
-
--------------------
-
-
-![](figs/aurentiacus/correlations.png){width=70%}
-
 
 -------------------
 
@@ -206,169 +220,74 @@ Sean Stankowski, Madeline Chase, Allison Fuiten, Matt Streisfeld:
 
 ![](figs/aurentiacus/diversity-recomb.png)
 
+---------------------
+
+![](figs/aurentiacus/emergence_of_fst_0.png)
 
 ---------------------
 
-![](figs/aurentiacus/building_cor_1.png)
+![](figs/aurentiacus/emergence_of_fst_1.png)
 
 ---------------------
 
-![](figs/aurentiacus/building_cor_2.png)
+![](figs/aurentiacus/emergence_of_fst_2.png)
+
 
 ---------------------
 
-![](figs/aurentiacus/building_cor_3.png)
+![](figs/aurentiacus/PUN_AUS_fst.png)
 
 ---------------------
 
-![](figs/aurentiacus/building_cor_4.png)
+![](figs/aurentiacus/PUN_CAL_fst.png)
 
 ---------------------
 
-![](figs/aurentiacus/cor-across-time.png)
+![](figs/aurentiacus/PUN_LON_fst.png)
+
+---------------------
+
+![](figs/aurentiacus/PUN_AUR_fst.png)
+
+---------------------
+
+![](figs/aurentiacus/PUN_FLE_fst.png)
+
+---------------------
+
+![](figs/aurentiacus/PUN_ARI_fst.png)
+
+---------------------
+
+![](figs/aurentiacus/PUN_BIF_fst.png)
+
+---------------------
+
+![](figs/aurentiacus/PUN_CLV_fst.png)
+
+
+---------------------
+
+![](figs/aurentiacus/cor-across-time-0.png)
+
+---------------------
+
+![](figs/aurentiacus/cor-across-time-1.png)
+
+---------------------
+
+![](figs/aurentiacus/cor-across-time-2.png)
 
 
 ## Conclusions
 
 - shared targets of linked selection across taxa
 
+- and across $\approx$ 1.5 million years
+
 . . .
 
 - but, what *kind* of linked selection?
-
-
-<!--  LOCAL PCA -->
-
-# Tree *shape*: with local PCA
-
-
-## Principal Components Analysis (PCA)
-
-![van Heerwaarden et al 2010](figs/maize_pca.jpg)
-
-<!-- http://www.pnas.org/content/108/3/1088.full -->
-
-----------------
-
-![Novembre et al 2008](figs/novembre-map-genes-mirror-geography-crop.jpg)
-
-
-## PCA describes the covariance matix
-
-Genetic covariance between samples $i$ and $j$ is
-the average over loci
-and reference samples $x$, $y$ of:
-
-::: {.center}
-
-![](figs/what_is_covariance.png)
-
-:::
-
-... so summarizes average *patterns of relationships*
-caused by *population structure*.
-
-
-## Population structure
-
-... is historical patterns of interbreeding, migration, and population sizes.
-
-. . .
-
-but: linked selection
-
-**locally distorts** genealogical patterns.
-
-**Question:** is there significant *shared* variation
-in patterns of relatedness?
-
-
----------------
-
-![Our method](figs/the-method-diagram-modified.png)
-
-
-
-## `lostruct`
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-
- * an R package
- * with templated Rmarkdown reports
- * and a script interface
- * [https://github.com/petrelharp/local_pca](https://github.com/petrelharp/local_pca)
-
-:::
-::: {.column width="50%"}
-
-![](figs/the-method-diagram-modified.png)
-
-
-:::
-::::::::::::::
-
-
-## Data: African *D. melanogaster*
-
-:::::::::::::: {.columns}
-::: {.column width="50%"}
-
-![](figs/drosophila_2R_inversion_pcs_0.png)
-
-:::
-::: {.column width="50%"}
-
-* DPGP *(Langley et al 2012; Pool et al 2012; Lack et al 2015)*
-* 380 mostly African samples -- WGS -- 9 Kb windows
-
-:::
-::::::::::::::
-
-
-------------
-
-![](figs/drosophila_2R_inversion_pcs_1.png)
-
-* large, segregating inversions *(Corbett-Detig & Hartl 2012; Langley et al 2012)*
-
-------------
-
-![](figs/drosophila_recomb_mds_for_talk.png)
-
-* without less common inversion haplotypes: *linked selection?*
-
-
-## Data: *Medicago truncatula* Hapmap (Tang et al 2014)
-
-* 263 pan-Mediterranean samples -- WGS -- 100 Kb windows
-
-##
-
-![](figs/medicago_for_talk.png)
-
-
-
-## 
-
-**Patterns are not driven by:**
-
-* recombination rate variation
-* polymorphism
-* PC switching
-* missingness
-
-
-## {.center}
-
-So, which is it?
-
-. . .
-
-
-? ? ?
-
-----------------
 
 
 <!-- section SIMULATION -->
@@ -380,8 +299,8 @@ So, which is it?
 To check predictions, we need simulations with:
 
 - many loci under selection
-- large populations with long genomes
 - geographic population structure
+- large populations with long genomes
 
 for long enough to reach equilibrium ($\sim 10N$ generations).
 
@@ -390,26 +309,23 @@ for long enough to reach equilibrium ($\sim 10N$ generations).
 For instance: $10^4$ individuals with $2 \times 10^8$ base pairs each for $10^5$ generations;
 nonneutral mutations possible at $10^5$ loci.
 
----------------------------
 
-**"many loci under selection"**
+##
 
----------------------------
-
-**S**election on **Li**nked **M**utations: *SLiM*
-
-Messer 20XX
-
--------------------------------------
-
-**"large populations with long genomes"**
-
--------------------------------------
-
-(tree sequences)
+a big step in the right direction
 
 <!-- 1. explain tree sequences and why they are so efficient (5min) -->
+
 # The tree sequence
+
+---------------
+
+![](figs/treseq_preprint.png)
+
+---------------
+
+![](figs/treseq_preprint_peeps.png)
+
 
 ## History is a sequence of trees
 
@@ -487,7 +403,7 @@ is *succinct* (no redundancy).
 
 . . .
 
-These are stored efficiently (hdf5) on disk
+These are stored efficiently on disk
 with a bit more information (e.g., metadata).
 
 
@@ -577,6 +493,7 @@ Sites
 
 
 <!-- 4. explain application to fwds sim recording (5min) -->
+
 # Forwards-time tree sequence recording
 
 ## The main idea
@@ -789,9 +706,7 @@ Every time an individual is born, we must:
 
 <!-- 5. display impressive speedups 2min) -->
 
-## {.slide: class="center"}
-
-**Implementation and results**
+# Implementation and results
 
 ## Benchmark implementation
 
@@ -836,29 +751,103 @@ but neutral mutations were added *afterwards*.
 ![Relative speedup of simulations](figs/speedup.png){ width=80% }
 
 
-# Back to the main program
+# Geographic simulations
 
--------------------------------------
+----------------
 
-**"geographic population structure"**
+To check predictions, we **still** need simulations with:
 
--------------------------------------
+- **many loci under selection**
+- **geographic population structure**
+- large populations with long genomes
 
-(SLiM v3)
+for long enough to reach equilibrium ($\sim 10N$ generations).
 
-nonWF
+. . .
+
+::: {.columns}
+:::::: {.column width=15%}
+
+![Rightarrow](figs/finger_right.png){width="100%"}
+
+:::
+:::::: {.column width=5%}
+
+:::
+:::::: {.column width=75%}
+
+SLiM v3.1 *(Haller and Messer)*
+
+:::
+::::::
+
+## SLiM v3.1
+
+**S**election on **Li**nked **M**utations:
+a forwards-time, individual-based, explicitly genomic simulator,
+now with:
+
+- continuous space
+- geographic maps
+- locally, density-dependent demography (*non-Wright-Fisher*)
+
+## ... and now with tree sequence recording
 
 
-Results of simulation
+SLiM preprint
+
+## {.centered}
+
+::: {.columns}
+:::::: {.column width=40%}
+
+A 100x speedup:
+
+:::
+:::::: {.column width=60%}
+
+![](figs/slim_timing.png){width=100%}
+
+:::
+::::::
+
 ---------------------
 
+Model:
 
-Summary
+
+
+
+
+- genome as human chr7 ($1.54 \times 10^8$bp)
+- $\approx$ 10,000 diploids
+- continuous, square habitat
+- selected mutations at rate $10^{-10}$
+
+
+---------------------
+
+**Sweeps and background selection**:
+$$
+    \pm s \sim \text{Gamma}(2, \text{mean}=0.005)
+$$
+
+![](figs/slim_divergences_run_031486.png)
+
+---------------------
+
+**Local adaptation**:
+
+$s$ as above but benefical on one side, deleterious on the other
+
+![](figs/slim_divergences_run_016913.png)
+
+
+# Overview
+
 -------
 
-We've got the tools to understand
-what it is that we don't know.
-
+open questions
 
 Thanks!
 -------
@@ -868,13 +857,49 @@ Thanks!
 - Matt Streisfeld 
 - Andy Kern (UO)
 
+Ben Haller, Jared Galloway
 
-Jerome, Jaime, and Kevin: 
+Jerome Kelleher, Jaime Ashander, and Kevin Thornton: 
 
-[![Jerome](jerome.jpeg){width="30%"}](http://jeromekelleher.net/pages/about.html), [![Jaime](jaime.jpg){width="30%"}](http://www.ashander.info/) [![Kevin](kevin.jpeg){width="30%"}](https://github.com/molpopgen).
 
-Funding: NSF ABI, Sloan (PR); Wellcome Trust (JK); NIH (KRT); USF&WS (JDA).
+Funding: NSF ABI, Sloan
 
 Slides with [reveal.js](http://hakim.se) and [pandoc](https://pandoc.org/).
 
+
+<!-- MISCELLANEA -->
+
+##
+
+miscellanea
+
+
+Hitchhiking
+-----------
+
+![Maynard Smith & Haigh](figs/from_the_literature/maynard-smith-haigh-hitchhiking-dip.png)
+
+
+Background selection
+--------------------
+
+![Hudson 1994](figs/from_the_literature/hudson-1994-background-dip-in-diversity.png)
+
+
+Balanced polymorphism
+---------------------
+
+![Kreitman & Hudson 1991](figs/from_the_literature/kreitman-hudson-fig-5.png)
+
+
+
+## *Drosophila melanogaster*
+
+![McGaugh et al 2012](figs/from_the_literature/mcgaugh-2012-drosophila-dip.png)
+
+
+
+------------------
+
+![](figs/aurentiacus/correlations.png){width=70%}
 
