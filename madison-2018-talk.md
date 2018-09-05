@@ -92,45 +92,38 @@ linked selection
 
 ![](figs/linked-selection-guide/linked-selection-site-soft.png)
 
-3. Recent balancing selection
-----------------------
-
-![](figs/linked-selection-guide/linked-selection-site-recent_balancing.png)
-
-
-4. Long-term balancing selection
-----------------------
-
-![](figs/linked-selection-guide/linked-selection-site-old_balancing.png)
-
-5. Adaptive introgression
+3. Adaptive introgression
 -------------------------
 
 ![](figs/linked-selection-guide/linked-selection-site-introgression.png)
 
-6. Local adaptation with gene flow
+4. Local adaptation with gene flow
 -------------------
 
 ![](figs/linked-selection-guide/linked-selection-site-local_adaptation.png)
 
 <!-- [Bierne 2010](https://doi.org/10.1111%2fj.1558-5646.2010.01050.x) -->
 
-7. Background selection
+5. Background selection
 -----------------------
 
 ![](figs/linked-selection-guide/linked-selection-region-background.png)
 
-8. Recurrent sweeps
+6. Recurrent sweeps
 -------------------
 
 ![](figs/linked-selection-guide/linked-selection-region-recurrent_sweeps.png)
 
-9. Recurrent introgression
+7. Recurrent introgression
 --------------------------
 
 ![](figs/linked-selection-guide/linked-selection-region-recurrent_introgression.png)
 
 ## Etcetera
+
+8. Recent balanching selection
+
+9. Long-term balancing selection
 
 10. Recurrent local adaptation after a split
 
@@ -179,7 +172,7 @@ McVicker et al 2009
 
 <!-- AURENTIACUS -->
 
-# Landscapes, changing over time
+# How do genetic landscapes change over time?
 
 
 The *Mimulus aurantiacus* species complex
@@ -228,10 +221,6 @@ The data:
 
 ![](figs/aurantiacus/lg1.png)
 
-
----------------------
-
-![](figs/aurantiacus/diversity-recomb.png)
 
 ---------------------
 
@@ -338,7 +327,6 @@ nonneutral mutations possible at $10^5$ loci.
 
 - **large populations with long genomes**
 
-a big step in the right direction
 
 <!-- 1. explain tree sequences and why they are so efficient (5min) -->
 
@@ -366,6 +354,7 @@ that says how they are related.
 
 A **tree sequence** describes this, er, sequence of trees.
 
+<!--
 . . .
 
 *Observations:*
@@ -375,7 +364,6 @@ A **tree sequence** describes this, er, sequence of trees.
 
 2. Much less can fully describe the history relevant to a *sample* of genomes.
 
-<!--
 3. This information is equivalent to the Ancestral Recombination Graph (ARG).
 -->
 
@@ -736,7 +724,6 @@ Every time an individual is born, we must:
     retaining the history of the current generation.
 
 
-<!-- 5. display impressive speedups 2min) -->
 
 # Implementation and results
 
@@ -859,31 +846,10 @@ now with:
 :::
 :::::::
 
-## 
-
-::: {.columns}
-::::::: {.column width="50%"}
-
-
-**S**election on **Li**nked **M**utations, v3.1:
-a forwards-time, individual-based, explicitly genomic simulator,
-now with:
-
-- continuous space
-- geographic maps
-- locally, density-dependent demography (*non-Wright-Fisher*)
-
+. . .
 
 **And a GUI!!!**
 
-:::
-::::::: {.column width="50%"}
-
-<!-- ![](figs/slim_logo.png) -->
-![](figs/slim_space.png){width=80%}
-
-:::
-:::::::
 
 
 
@@ -958,11 +924,14 @@ $s$ as above but beneficial on one side, deleterious on the other
 
 
 
-# Overview
+# Recap
 
 -------
 
-> - Landscapes of genetic diversity emerge, and change with time.
+> - Landscapes of genetic diversity are clues to the ongoing types and intensities
+    of natural selection.
+
+> - We can see them emerge, and change with time.
 
 > - What makes these landscapes? Still unknown.
 
@@ -1009,11 +978,27 @@ Balanced polymorphism
 ![Kreitman & Hudson 1991](figs/from_the_literature/kreitman-hudson-fig-5.png)
 
 
+3. Recent balancing selection
+----------------------
+
+![](figs/linked-selection-guide/linked-selection-site-recent_balancing.png)
+
+
+4. Long-term balancing selection
+----------------------
+
+![](figs/linked-selection-guide/linked-selection-site-old_balancing.png)
+
 
 ## *Drosophila melanogaster*
 
 ![McGaugh et al 2012](figs/from_the_literature/mcgaugh-2012-drosophila-dip.png)
 
+
+
+---------------------
+
+![](figs/aurantiacus/diversity-recomb.png)
 
 
 ------------------
@@ -1034,5 +1019,4 @@ for a subset of its samples, such that:
 
 4. No adjacent redundant edges 
     (e.g., $(\ell, x, p, c) + (x, r, p, c) \rightarrow (\ell, r, p, c)$).
--->
 
