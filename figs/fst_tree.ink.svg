@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="134.59629"
-     inkscape:cy="169.22811"
+     inkscape:cx="72.976985"
+     inkscape:cy="167.2078"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -174,7 +174,7 @@
          id="tspan819"
          x="61.717102"
          y="182.20773"
-         style="stroke-width:0.26458332px">species 1</tspan></text>
+         style="stroke-width:0.26458332px">population 1</tspan></text>
     <ellipse
        ry="3.2072344"
        rx="20.045216"
@@ -192,7 +192,7 @@
          y="182.20773"
          x="109.34209"
          id="tspan825"
-         sodipodi:role="line">species 2</tspan></text>
+         sodipodi:role="line">population 2</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 53.186636,174.45692 c 0,0 2.539061,-34.87867 8.686258,-35.81412 6.147199,-0.93544 9.621705,35.81412 9.621705,35.81412"

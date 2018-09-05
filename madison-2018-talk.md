@@ -10,6 +10,8 @@ date: "Madison // Laboratory of Genetics // September 2018"
 
 # Overview
 
+##
+
 1. *Theory:* a field guide to linked selection
 2. *Practice:* some landscapes from the wild
 3. *Simulation:* recent progress on a hard problem
@@ -179,7 +181,7 @@ The *Mimulus aurantiacus* species complex
 -----------------------------------------
 
 ::: {.centered}
-![](figs/aurantiacus/system.png)
+![](figs/aurantiacus/phylogeny.png)
 :::
 
 
@@ -289,7 +291,15 @@ The data:
 
 . . .
 
-- But, what *kind* of linked selection?
+- But, what *kind* of linked selection? \
+    How strongly and frequently does it act? \
+    On how many targets?
+
+. . .
+
+Consequences for: genetic load/disease,
+speed of evolution,
+trait architecture.
 
 
 <!-- section SIMULATION -->
@@ -298,7 +308,7 @@ The data:
 
 -----------------------------------------
 
-![](figs/aurantiacus/system.png)
+![](figs/aurantiacus/phylogeny.png)
 
 ------------------
 
@@ -867,7 +877,7 @@ now with:
 
 ## What else can you do with the tree sequence?
 
-> - recording ancient samples 
+> - record ancient samples 
 > - true ancestry reconstruction 
 > - *recapitation*: fast, post-hoc initialization with coalescent simulation 
 
@@ -924,7 +934,7 @@ $s$ as above but beneficial on one side, deleterious on the other
 
 
 
-# Recap
+# Summary
 
 -------
 

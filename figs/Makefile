@@ -6,7 +6,7 @@ linked_selection_figs : linked-selection-guide/linked-selection-site-neutral.png
 
 local_pca_figs : what_is_covariance.png drosophila_2R_inversion_pcs_0.png drosophila_2R_inversion_pcs_1.png drosophila_recomb_mds_for_talk.png medicago_for_talk.png the-method-diagram-modified.png
 
-aurantiacus_figs : aurantiacus/system.png aurantiacus/distributions.png aurantiacus/diversity-recomb.png aurantiacus/correlations.png aurantiacus/lg1.png aurantiacus/building_cor_1.png aurantiacus/building_cor_2.png aurantiacus/building_cor_3.png aurantiacus/building_cor_4.png aurantiacus/cor-across-time-0.png aurantiacus/cor-across-time-1.png aurantiacus/cor-across-time-2.png aurantiacus/stankowski-color-cline.png aurantiacus/emergence_of_fst_0.png aurantiacus/emergence_of_fst_1.png aurantiacus/emergence_of_fst_2.png
+aurantiacus_figs : aurantiacus/phylogeny.png aurantiacus/distributions.png aurantiacus/diversity-recomb.png aurantiacus/correlations.png aurantiacus/lg1.png aurantiacus/building_cor_1.png aurantiacus/building_cor_2.png aurantiacus/building_cor_3.png aurantiacus/building_cor_4.png aurantiacus/cor-across-time-0.png aurantiacus/cor-across-time-1.png aurantiacus/cor-across-time-2.png aurantiacus/stankowski-color-cline.png aurantiacus/emergence_of_fst_0.png aurantiacus/emergence_of_fst_1.png aurantiacus/emergence_of_fst_2.png
 
 linked-selection-guide/linked-selection-site-%.pdf : linked-selection-guide.ink.svg
 	./export-layers-svg.sh $< axes site $* >$@
