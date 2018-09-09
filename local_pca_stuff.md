@@ -1,3 +1,7 @@
+title: "local PCA"
+author: "Peter Ralph"
+---
+
 
 <!--  LOCAL PCA -->
 
